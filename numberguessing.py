@@ -1,0 +1,17 @@
+import random
+num=random.randint(1,100)
+print("Computer selected a number from 1 to 100(inclusive),now it's your turn-")
+turns=0
+while True:
+    guess=int(input("Enter the guessed number="))
+    if(guess==num):
+        print("\n\tYou got it right")
+        break
+    elif(guess<num):
+        print("\tBigger number please")
+        turns+=1
+    elif(guess>num):
+        print("\tlesser number please")
+        turns+=1
+print("\nNumber of turns=",turns+1)        
+                
